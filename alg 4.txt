@@ -1,0 +1,22 @@
+alg 4
+Algoritmo "questao 4"
+
+Var
+   sm : real
+Inicio
+   Escreva("Digite seu saldo médio do ultimo ano R$")
+   leia (sm)
+   se (sm>0) e (sm<=200) entao
+      escreva ("Nenhum crédito")
+   senao
+      se (sm>201) e (sm<=400) entao
+         escreva (sm+sm*20/100, " valor do saldo médio")
+      senao
+         se (sm>401) e (sm<=600) entao
+            escreva (sm+sm*30/100, " valor do saldo médio")
+         senao
+            escreva (sm+sm*40/100, " valor do saldo médio")
+         fimse
+      fimse
+   fimse
+Fimalgoritmo

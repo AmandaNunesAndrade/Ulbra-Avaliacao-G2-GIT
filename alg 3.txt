@@ -1,0 +1,36 @@
+alg 3
+Algoritmo "questao 3"
+
+Var
+   cor, s: caracter
+   i, ingresso: real
+Inicio
+   Escreva("qual sua idade:")
+   leia(i)
+   Escreva("Qual a cor da sua camiseta?")
+   leia (cor)
+   Escreva ("Qual seu sexo? (f/m)")
+   leia (s)
+   se (cor= "rosa") entao
+      ingresso<-20.00
+   senao
+      se (cor="azul") entao
+         ingresso<-30.00
+      senao
+         se (cor="preta") e (s="f") entao
+            ingresso<-10.00
+         senao
+            se (cor="preta") e (s="m") entao
+               ingresso<-15.00
+            senao
+               se (cor="laranja") entao
+                  ingresso<-25.00
+               senao
+                  ingresso<-45.00
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+   Escreva ("O valor do ingresso é R$", ingresso)
+Fimalgoritmo
